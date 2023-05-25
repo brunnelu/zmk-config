@@ -10,35 +10,14 @@
 
 / {
     macros {
-        focus_screen_1: focus_screen_1 {
-            compatible = "zmk,behavior-macro";
-            label = "FOCUS_SCREEN_1";
-            #binding-cells = <0>;
-            bindings = <&kp LALT &kp LEFT_SHIFT &kp Q>;
-        };
-        focus_screen_2: focus_screen_2 {
-            compatible = "zmk,behavior-macro";
-            label = "FOCUS_SCREEN_2";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp W>;
-        };
-        focus_screen_3: focus_screen_3 {
-            compatible = "zmk,behavior-macro";
-            label = "FOCUS_SCREEN_3";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp E>;
-        };
-        focus_screen_4: focus_screen_4 {
-            compatible = "zmk,behavior-macro";
-            label = "FOCUS_SCREEN_4";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp R>;
-        };
-        alt_shift: alt_shift {
-            compatible = "zmk,behavior-macro";
-            label = "ALT_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT>;
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <>;
         };
     };
 
@@ -69,7 +48,7 @@
 
             bindings = <
    &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0  &kp BSPC
-&bt BT_CLR       &kp ESC      &kp LALT       &kp TAB  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &kp BACKSPACE    &trans
+&bt BT_CLR     &kp LCTRL       &kp ESC       &kp TAB  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &kp BACKSPACE    &trans
  &kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 3      &trans    &trans    &trans     &trans         &trans    &trans
                                             &kp LGUI         &mo 3     &kp SPACE     &kp RET     &mo 3  &kp RALT
             >;
@@ -92,10 +71,10 @@
 
         top {
             bindings = <
-&trans           &trans           &trans           &trans           &trans  &trans    &trans  &kp F17  &kp F18  &kp F19    &kp F13  &key_repeat
-&trans  &focus_screen_1  &focus_screen_2  &focus_screen_3  &focus_screen_4  &trans     &kp H    &kp J    &kp K    &kp L  &kp SPACE       &trans
-&trans           &trans           &trans           &trans           &trans  &trans    &trans   &trans   &trans   &trans     &trans       &trans
-                                                   &trans           &trans  &trans    &trans   &trans   &trans
+&trans         &trans         &trans         &trans         &trans     &trans           &trans        &kp F17        &kp F18        &kp F19        &kp F13  &key_repeat
+&trans  &kp LS(LA(A))  &kp LS(LA(S))  &kp LS(LA(D))  &kp LS(LA(F))  &kp CARET    &kp LS(LA(H))  &kp LS(LA(J))  &kp LS(LA(K))  &kp LS(LA(L))  &kp LG(SPACE)       &trans
+&trans         &trans         &trans         &trans         &trans     &trans           &trans         &trans         &trans         &trans         &trans       &trans
+                                             &trans         &trans     &trans           &trans         &trans         &trans
             >;
         };
     };
