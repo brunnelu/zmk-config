@@ -71,7 +71,7 @@
             bindings = <
                 &trans         &trans         &trans         &trans         &trans             &trans           &trans        &kp F17        &kp F18        &kp F19        &kp F13  &key_repeat
                 &trans  &kp LS(LA(A))  &kp LS(LA(S))  &kp LS(LA(D))  &kp LS(LA(F))  &kp LS(LA(SPACE))    &kp LS(LA(H))  &kp LS(LA(J))  &kp LS(LA(K))  &kp LS(LA(L))  &kp LG(SPACE)       &trans
-                &trans         &trans         &trans         &trans         &trans             &trans           &trans      &kp CARET         &de_ae         &de_oe         &de_ue       &trans
+                &trans         &trans         &trans         &trans         &trans             &trans           &trans      &kp LCTRL  &de_ae         &de_oe         &de_ue       &trans
                                              &trans         &trans             &trans           &trans         &trans         &trans
             >;
         };
