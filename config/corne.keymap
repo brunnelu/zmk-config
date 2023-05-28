@@ -51,7 +51,7 @@
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &trans    &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F4 N4 &mt F5 N5     &mt F6 N6 &mt F7 N7 &mt F8 N8 &mt F9 N9 &mt F10 N0 &trans
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
-                &trans    &kp TAB  &kp LA(DEL) &kp BSPC &kp ESC   &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  &trans
+                &trans    &kp TAB  &kp LA(BSPC) &kp BSPC &kp ESC   &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  &trans
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &trans    &trans    &trans    &trans    &trans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
