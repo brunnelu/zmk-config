@@ -55,7 +55,7 @@
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &trans    &trans    &trans    &trans    &trans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
-                                              &trans    &trans     &trans        &trans   trans     &kp LEFT_SHIFT
+                                              &trans    &trans     &trans        &trans   &trans     &kp LEFT_SHIFT
             >;
         };
 
