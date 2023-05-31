@@ -28,6 +28,18 @@
         };
     };
 
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,7 +52,7 @@
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &kp LSHFT &kp Z     &kp X     &kp C     &kp V         &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp LEFT_ALT
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
-                                   &kp LGUI  &lt 1 SPACE &ht_hp LSHFT RET       &ht_hp LSHFT LA(BSPC) &lt 2 BSPC &kp ESC
+                                   &kp LGUI  &lt 1 SPACE &hm LSHFT RET          &hm LSHFT LA(BSPC) &lt 2 BSPC &kp ESC
             //                    ╰─────────┴─────────┴────────────────────╯   ╰────────────────────┴─────────┴─────────╯
             >;
         };
