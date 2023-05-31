@@ -52,7 +52,7 @@
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &kp LSHFT &kp Z     &kp X     &kp C     &kp V         &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp LEFT_ALT
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
-                                   &kp LGUI  &lt 1 SPACE &hm LSHFT RET          &hm LSHFT LA(BSPC) &lt 2 BSPC &kp ESC
+                                   &kp LGUI  &lt 1 SPACE &hm LSHFT RET          &lt 2 LA(BSPC) &hm LSHFT BSPC &kp ESC
             //                    ╰─────────┴─────────┴────────────────────╯   ╰────────────────────┴─────────┴─────────╯
             >;
         };
@@ -65,7 +65,7 @@
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &trans    &trans    &trans    &trans    &kp TAB   &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
-                &trans    &trans    &trans    &trans    &trans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+                &trans    &trans    &trans    &trans    &htrans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                                               &trans    &trans     &trans        &trans   &trans     &trans
             >;
