@@ -65,7 +65,7 @@
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &trans    &trans    &trans    &trans    &kp TAB   &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
-                &trans    &trans    &trans    &trans    &htrans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+                &trans    &trans    &trans    &trans    &trans    &trans        &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                                               &trans    &trans     &trans        &trans   &trans     &trans
             >;
