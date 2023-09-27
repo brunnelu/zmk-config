@@ -39,7 +39,8 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
+    // interstingly the O column buggs on usb connection and not on bluetooth
+    // rebuild
     keymap {
         compatible = "zmk,keymap";
 
