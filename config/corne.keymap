@@ -5,14 +5,11 @@
  */
 // #define HOST_OS 1  // set to 1 for Linux, default is 0 (Windows)
 #define HOST_OS 2  // set to 2 for macOS/Windows-Alt-Codes, default is 0 (Windows)
-#include "../zmk-nodefree-config/helper.h"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-
-#include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 
 / {
@@ -83,7 +80,7 @@
             // ├─────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
                 &trans    &kp LS(LA(Q)) &kp LS(LA(W)) &kp LS(LA(E)) &kp LS(LA(R)) &kp LS(LA(SPACE)) &kp LS(LA(H)) &kp LS(LA(J)) &kp LS(LA(K)) &kp LS(LA(L)) &kp LG(SPACE) &trans
             // ├─────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
-              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &out OUT_TOG  &kp LCTRL     &de_ae        &de_oe        &de_ue        &trans
+              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &out OUT_TOG  &kp LCTRL     &trans        &trans        &trans        &trans
             // ├─────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
                                                       &trans        &trans        &trans            &trans        &trans        &trans
             >;
