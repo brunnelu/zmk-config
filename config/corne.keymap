@@ -54,7 +54,7 @@
             //                 ╰──────────────┴─────────────┴──────────────╯   ╰───────────────┴────────────────┴───────────────╯
             >;
         };
-
+        // TODO add Mac Umlaute with Option + u + a/o/u
         lower_layer {
             // Numbers have a hold behavior like F1 and a tab behavior
             bindings = <
