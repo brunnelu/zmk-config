@@ -11,20 +11,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
 / {
     macros {
     };
-
     combos {
         compatible = "zmk,combos";
-
         new_combo {
             bindings = <&trans>;
             key-positions = <>;
         };
     };
-
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -41,8 +37,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <
+        default_layer {  // 0 — macOS
+            bindings = 
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                 &kp ESC   &kp Q     &kp W     &kp E     &kp R         &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -51,7 +47,6 @@
                 &kp LSHFT &kp Z     &kp X     &kp C     &kp V         &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp LEFT_ALT
             // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
                                 &hm LCTRL TAB &hm LSHFT SPACE &hm LGUI RET     &hm RGUI LA(BSPC) &hm LSHFT BSPC   &hm LEFT_ALT ESC
-            //                 ╰──────────────┴─────────────┴──────────────╯   ╰───────────────┴────────────────┴───────────────╯
             >;
         };
         // TODO add Mac Umlaute with Option + u + a/o/u
@@ -80,12 +75,23 @@
             // ├─────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
                 &trans    &kp LS(LA(Q)) &kp LS(LA(W)) &kp LS(LA(E)) &kp LS(LA(R)) &kp LS(LA(SPACE)) &kp LS(LA(H)) &kp LS(LA(J)) &kp LS(LA(K)) &kp LS(LA(L)) &kp LG(SPACE) &trans
             // ├─────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
-              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &out OUT_TOG  &kp LCTRL     &trans        &trans        &trans        &trans
+              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &out OUT_TOG  &to 3         &to 0        &trans        &trans        &trans
             // ├─────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────┤
                                                       &trans        &trans        &trans            &trans        &trans        &trans
             >;
         };
 
-
+        windows_layer {  // 3 — Windows (GUI ↔ Alt swapped)
+            bindings = 
+            // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
+                &kp ESC   &kp Q     &kp W     &kp E     &kp R         &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
+            // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
+                &kp LCTRL &kp A     &kp S     &lt 2 D   &lt 1 F       &kp G     &kp H     &lt 1 J   &lt 2 K   &kp L     &kp SEMI  &kp SQT
+            // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
+                &kp LSHFT &kp Z     &kp X     &kp C     &kp V         &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp LGUI
+            // ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────├─────────┼─────────┼─────────┼─────────┼─────────┤
+                                &hm LCTRL TAB &hm LSHFT SPACE &hm LALT RET     &hm RALT LG(BSPC) &hm LSHFT BSPC   &hm LGUI ESC
+            >;
+        };
     };
 };
